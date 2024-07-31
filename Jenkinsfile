@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Docker Run') {
             steps {
-                sh "docker run -d -p 5000:5000 abhijith99954/simpleflask:latest"
+                sh "docker run -d -p 5001:5000 abhijith99954/simpleflask:latest"
             }
         }
     }
