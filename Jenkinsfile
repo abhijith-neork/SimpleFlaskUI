@@ -10,7 +10,7 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'b4f77e8b-ae71-44cc-aada-345a670dbc41') {
+                    withDockerRegistry(credentialsId: '39d4cf95-d261-457a-af94-42f4366d35da') {
                         sh "docker build -t abhijith99954/simpleflask ."
                         sh "docker tag abhijith99954/simpleflask:latest abhijith99954/simpleflask:latest"
                         sh "docker push abhijith99954/simpleflask:latest"
